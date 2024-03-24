@@ -37,6 +37,12 @@ const BookSchema = new Schema({
         type: Boolean,
         default:false,
     },
+    genres: [
+        {
+            type: String,
+            required: false,
+        },
+    ],
 });
 
 const Books = mongoose.model("Books", BookSchema)

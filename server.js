@@ -24,7 +24,7 @@ const Books = require('./models/Books')
 
 app.get('/books', async (req, res) => {
     
-    const books = await Books.find().select(['name' ,'author','bookimg']);
+    const books = await Books.find().select(['name' ,'author','bookimg','tag','genres']);
     res.json(books);
 })
 
