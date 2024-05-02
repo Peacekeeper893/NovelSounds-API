@@ -30,7 +30,7 @@ app.get('/books', async (req, res) => {
 
 app.get('/books/:tag', async (req, res) => {
     
-    const books = await Books.find({ tag: req.params.tag }).select(['name' ,'author', 'bookimg']);;
+    const books = await Books.find({ tag: req.params.tag }).select(['name' ,'author', 'bookimg', 'aws_hosted']);;
     res.json(books);
 })
 
