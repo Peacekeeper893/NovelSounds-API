@@ -43,6 +43,10 @@ const BookSchema = new Schema({
             required: false,
         },
     ],
+    aws_hosted: {
+        type: Boolean,
+        default: false,
+    },
 });
 
 const Books = mongoose.model("Books", BookSchema)

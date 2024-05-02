@@ -1,2 +1,2 @@
-GET http://localhost:3001/books
+GET http://localhost:3001/book/Harry Potter and the Goblet of Fire
 
